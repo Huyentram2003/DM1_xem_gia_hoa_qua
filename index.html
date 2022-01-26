@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tra hoa qua</title>
+</head>
+
+<body>
+<h1>giá hoa quả</h1>
+<input type="text" id="s1">
+<button onclick="checkNumber();">Xem Giá</button>
+<p id="s2"></p>
+<script>
+    function checkNumber () {
+      let x = document.getElementById('s1').value;
+        switch (x.toLowerCase()) {
+            case 'ổi':
+            case 'dưa hấu':
+                document.getElementById('s2').innerHTML = '2000 vnđ/kg' ;
+                break;
+            case 'táo':
+            case 'xoài':
+                 document.getElementById('s2').innerHTML = '3000 vnđ/kg' ;
+                break;
+            case 'cam':
+            case 'chôm chôm':
+                 document.getElementById('s2').innerHTML = '4000 vnđ/kg' ;
+                break;
+            case 'măng cụt' :
+                 document.getElementById('s2').innerHTML = '5000 vnđ/kg';
+                break;
+            default :
+                document.getElementById('s2').innerHTML = 'k có loại quả này' ;
+        }
+
+    }
+
+</script>
+</body>
+</html>
